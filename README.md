@@ -84,6 +84,5 @@ This model enables the company to:
 
 ## ▶️ How to Run
 1. Clone the repository
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
+2. Open the Jupyter Notebook
+3. Run all cells
