@@ -83,6 +83,7 @@ This model enables the company to:
 ---
 
 ## ▶️ How to Run
+(Content in Spanish)
 1. Clone the repository
 2. Open the Jupyter Notebook
 3. Run all cells
