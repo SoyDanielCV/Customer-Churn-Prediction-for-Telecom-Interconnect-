@@ -1,89 +1,135 @@
-# 📊 Customer Churn Prediction for Telecom (Interconnect)
-
-## 📌 Business Problem
-Customer churn is a major challenge in the telecommunications industry. Retaining existing customers is often more cost-effective than acquiring new ones.
-
-This project aims to build a machine learning model capable of predicting which customers are likely to cancel their service, enabling proactive retention strategies.
+# 📊 Customer Churn Prediction | Predicción de Abandono de Clientes
 
 ---
 
-## 📂 Dataset
-The dataset consists of multiple sources containing customer information:
+## 🇺🇸 English
 
-- Contract details
-- Personal information
-- Internet services
-- Phone services
+### 📌 Overview
 
-These datasets were merged into a single analytical dataset using a unique customer ID.
+This project focuses on predicting customer churn in the telecommunications industry using machine learning models. The goal is to identify customers at risk of leaving and enable proactive retention strategies.
 
 ---
 
-## ⚙️ Methodology
+### 🎯 Objective
 
-### 1. Data Preparation
-- Merged multiple datasets into a unified structure
-- Handled missing values and inconsistent entries
-- Created the target variable **Churn**
-- Encoded categorical variables using Label Encoding
-- Scaled numerical features using StandardScaler
-
-### 2. Exploratory Data Analysis (EDA)
-- Analyzed distributions of numerical and categorical variables
-- Identified patterns related to churn behavior
-- Evaluated correlations between features
-
-### 3. Model Training
-Trained and compared multiple models:
-- Logistic Regression
-- Random Forest
-- XGBoost
-
-### 4. Model Evaluation
-Models were evaluated using:
-- AUC-ROC
-- Accuracy
+* Predict customer churn behavior
+* Identify high-risk customers
+* Support data-driven retention strategies
 
 ---
 
-## 📈 Results
+### ⚙️ Methodology
 
-| Model               | AUC-ROC | Accuracy |
-|--------------------|--------|----------|
-| Logistic Regression| 0.8255 | 0.7260   |
-| Random Forest      | 0.8588 | 0.7857   |
-| XGBoost (Final)    | **0.9013** | **0.8602** |
+* Data merging from multiple sources
+* Data cleaning and preprocessing
+* Feature engineering
+* Model training and comparison
 
-✅ XGBoost achieved the best performance and was selected as the final model.
+**Models used:**
 
----
-
-## 💡 Key Insights
-- Customers with monthly contracts are more likely to churn
-- Certain payment methods are associated with higher churn rates
-- Service combinations (internet + add-ons) influence retention
+* Logistic Regression
+* Random Forest
+* XGBoost
 
 ---
 
-## 🚀 Business Impact
-This model enables the company to:
-- Identify high-risk customers early
-- Implement targeted retention strategies
-- Reduce churn and increase customer lifetime value
+### 📊 Results
+
+| Model               | AUC-ROC    | Accuracy   |
+| ------------------- | ---------- | ---------- |
+| Logistic Regression | 0.8255     | 0.7260     |
+| Random Forest       | 0.8588     | 0.7857     |
+| XGBoost ✅           | **0.9013** | **0.8602** |
 
 ---
 
-## 🛠️ Tech Stack
-- Python
-- Pandas / NumPy
-- Scikit-learn
-- XGBoost
-- Matplotlib / Seaborn
+### 💡 Key Insights
+
+* Customers with monthly contracts are more likely to churn
+* Payment methods influence churn behavior
+* Service combinations impact retention
 
 ---
 
-## ▶️ How to Run
-(Content in Spanish)
-1. Clone the repository
-2. Open the Jupyter Notebook
-3. Run all cells
+### 🚀 Business Impact
+
+* Early identification of churn risk
+* Improved customer retention strategies
+* Increased customer lifetime value
+
+---
+
+### 🛠️ Tech Stack
+
+* Python
+* Pandas / NumPy
+* Scikit-learn
+* XGBoost
+* Matplotlib / Seaborn
+
+---
+
+## 🇪🇸 Español
+
+### 📌 Descripción
+
+Este proyecto se enfoca en predecir la cancelación de clientes en la industria de telecomunicaciones mediante modelos de machine learning, permitiendo estrategias de retención proactivas.
+
+---
+
+### 🎯 Objetivo
+
+* Predecir el abandono de clientes
+* Identificar clientes en riesgo
+* Apoyar decisiones basadas en datos
+
+---
+
+### ⚙️ Metodología
+
+* Integración de múltiples datasets
+* Limpieza y preparación de datos
+* Ingeniería de características
+* Entrenamiento y comparación de modelos
+
+**Modelos utilizados:**
+
+* Regresión Logística
+* Random Forest
+* XGBoost
+
+---
+
+### 📊 Resultados
+
+| Modelo              | AUC-ROC    | Accuracy   |
+| ------------------- | ---------- | ---------- |
+| Regresión Logística | 0.8255     | 0.7260     |
+| Random Forest       | 0.8588     | 0.7857     |
+| XGBoost ✅           | **0.9013** | **0.8602** |
+
+---
+
+### 💡 Insights Clave
+
+* Contratos mensuales tienen mayor churn
+* Métodos de pago influyen en cancelación
+* Combinación de servicios afecta retención
+
+---
+
+### 🚀 Impacto de Negocio
+
+* Identificación temprana de clientes en riesgo
+* Mejora en estrategias de retención
+* Incremento del valor del cliente
+
+---
+
+### 🛠️ Tecnologías
+
+* Python
+* Pandas / NumPy
+* Scikit-learn
+* XGBoost
+* Matplotlib / Seaborn
